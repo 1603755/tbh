@@ -11,6 +11,7 @@
     'category': 'Uncategorized',
     'depends': ['project'],
     'data': [
+        'security/ir.model.access.csv',
         'views/view_event.xml',
         'views/view_proceedings.xml',
     ],
