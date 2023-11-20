@@ -59,7 +59,7 @@
     </record>
 
     <menuitem
-        name="Exppedientes"
+        name="Expedientes"
         id="proceedings"
         parent="project.menu_project_config"
         action="action_proceedings"
