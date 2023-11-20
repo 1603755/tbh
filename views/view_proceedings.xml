@@ -58,7 +58,7 @@
         name="Exppedientes"
         id="proceedings"
         parent="project.menu_project_config"
-        action="acion_proceedings"
+        action="action_proceedings"
         sequence="20"
     />
 
