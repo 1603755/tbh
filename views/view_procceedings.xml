@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_proceedings_form" model="ir.ui.view">
+        <field name="name">proceedings.proceedings.form</field>
+        <field name="model">proceedings.proceedings</field>
+        <field name="arch" type="xml">
+            <form string="Expedientes">
+                <sheet>
+                    <group>
+                        <field name="type"/>
+                        <field name="expediente"/>
+                        <field name="comentarios"/>
+                        <field name="event_id"/>
+                        <field name="notaria"/>
+                        <field name="oficial_notaria"/>
+                        <field name="documentacion_solicitada"/>
+                        <field name="documentacion_enviada"/>
+                        <field name="fecha_expediente"/>
+                        <field name="registro_civil_juzgado"/>
+                        <field name="documentacion_entregada"/>
+                        <field name="cita_expediente_reservada"/>
+                        <field name="cita_boda_reservada"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!--make the tree view -->
+    <record id="view_proceedings_tree" model="ir.ui.view">
+        <field name="name">proceedings.proceedings.tree</field>
+        <field name="model">proceedings.proceedings</field>
+        <field name="arch" type="xml">
+            <tree string="Expedientes">
+                <field name="type"/>
+                <field name="expediente"/>
+                <field name="comentarios"/>
+                <field name="event_id"/>
+                <field name="notaria"/>
+                <field name="oficial_notaria"/>
+                <field name="documentacion_solicitada"/>
+                <field name="documentacion_enviada"/>
+                <field name="fecha_expediente"/>
+                <field name="registro_civil_juzgado"/>
+                <field name="documentacion_entregada"/>
+                <field name="cita_expediente_reservada"/>
+                <field name="cita_boda_reservada"/>
+            </tree>
+        </field>
+    </record>
+    <!--Make the action -->
+    <record id="action_proceedings" model="ir.actions.act_window">
+        <field name="name">Expedientes</field>
+        <field name="res_model">proceedings.proceedings</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        name="Exppedientes"
+        id="proceedings"
+        parent="project.menu_project_config"
+        action="acion_proceedings"
+        sequence="20"
+    />
+
+</odoo>
