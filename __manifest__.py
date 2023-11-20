@@ -11,7 +11,8 @@
     'category': 'Uncategorized',
     'depends': ['project'],
     'data': [
-        'views/view_file.xml',
+        'views/view_event.xml',
+        'views/view_proceedings.xml',
     ],
     'installable': True,
     'application': True,
