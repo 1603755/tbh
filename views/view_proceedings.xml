@@ -11,6 +11,7 @@
                         <field name="expediente"/>
                         <field name="comentarios"/>
                         <field name="event_id"/>
+                        <field name="task"/>
 
                         <field name="notaria" attrs="{'invisible': [('type', '!=', 'notarial')]}"/>
                         <field name="oficial_notaria" attrs="{'invisible': [('type', '!=', 'notarial')]}"/>
@@ -37,7 +38,8 @@
                 <field name="expediente"/>
                 <field name="comentarios"/>
                 <field name="event_id"/>
-
+                <field name="task"/>
+                <!--
                 <field name="notaria" attrs="{'invisible': [('type', '!=', 'notarial')]}"/>
                 <field name="oficial_notaria" attrs="{'invisible': [('type', '!=', 'notarial')]}"/>
                 <field name="documentacion_solicitada" attrs="{'invisible': [('type', '!=', 'notarial')]}"/>
@@ -47,7 +49,7 @@
                 <field name="registro_civil_juzgado" attrs="{'invisible': [('type', '!=', 'registro_civil')]}"/>
                 <field name="documentacion_entregada" attrs="{'invisible': [('type', '!=', 'registro_civil')]}"/>
                 <field name="cita_expediente_reservada" attrs="{'invisible': [('type', '!=', 'registro_civil')]}"/>
-                <field name="cita_boda_reservada" attrs="{'invisible': [('type', '!=', 'registro_civil')]}"/>
+                <field name="cita_boda_reservada" attrs="{'invisible': [('type', '!=', 'registro_civil')]}"/>-->
             </tree>
         </field>
     </record>

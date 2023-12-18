@@ -12,6 +12,7 @@
                         <field name="comments"/>
                         <field name="witness_1"/>
                         <field name="witness_2"/>
+                        <field name="task"/>
                     </group>
                 </sheet>
             </form>
@@ -29,6 +30,7 @@
                 <field name="comments"/>
                 <field name="witness_1"/>
                 <field name="witness_2"/>
+                <field name="task"/>
             </tree>
         </field>
     </record>
