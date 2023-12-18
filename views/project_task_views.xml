@@ -1,0 +1,14 @@
+<odoo>
+	<record id="project_task_tbh_form_view" model="ir.ui.view">
+    	<field name="name">Project Task TBH Form View</field>
+    	<field name="inherit_id" ref="project.view_task_form2"/>
+    	<field name="model">project.task</field>
+    	<field name="arch" type="xml">
+     		<field name="parent_id" position="after">
+     			<field name="expediente"/>
+     			<field name="evento"/>
+     			<field name="product"/>
+     		</field>
+     	</field>
+	</record>
+</odoo>

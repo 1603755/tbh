@@ -1,4 +1,3 @@
-
 from odoo import models, fields
 
 class Event(models.Model):
@@ -11,3 +10,4 @@ class Event(models.Model):
     comments = fields.Text(string='Comentarios')
     witness_1 = fields.Many2one('res.partner', string='Testigo 1')
     witness_2 = fields.Many2one('res.partner', string='Testigo 2')
+    task = fields.Many2one(comodel_name='project.task',required=True)

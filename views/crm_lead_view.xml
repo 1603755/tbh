@@ -1,0 +1,13 @@
+<odoo>
+	<record id="crm_lead_tbh_view_form" model="ir.ui.view">
+    	<field name="name">crm.lead.tbh.form</field>
+    	<field name="inherit_id" ref="crm.crm_lead_view_form"/>
+    	<field name="model">crm.lead</field>
+    	<field name="arch" type="xml">
+     		<field name="tag_ids" position="after">
+     			<field name="boda_fecha"/>
+     			<field name="boda_lugar"/>
+     		</field>
+     	</field>
+	</record>
+</odoo>

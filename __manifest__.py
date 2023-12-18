@@ -1,21 +1,18 @@
 {
-    'name': 'Proceedings',
-    'version': '1.0',
-    'summary': 'Modulo de expedientes',
-    'description': """
-        Module Description
-    """,
-    'author': 'Your Name',
-    'maintainer': 'Your Name',
-    'website': 'https://www.example.com',
-    'category': 'Uncategorized',
-    'depends': ['project'],
-    'data': [
-        'security/ir.model.access.csv',
-        'views/view_event.xml',
-        'views/view_proceedings.xml',
-    ],
+    # App information
+    'name': 'Personalización para Tu Boda Hoy',
+    'version': '15.0.1',
+    'category': 'Other',
+    'license': 'AGPL-3',
+    # Author
+    'author': 'Javier L. de los Mozos',
+    'website': 'http://www.jdelosmozos.com',
+    'maintainer': 'jdelosmozos@coit.es',
+    # Dependencies
+    'depends': ['crm', 'project', 'proceedings','projectProduct'],
+    'data':[
+            'views/crm_lead_view.xml',
+            'views/project_task_views.xml',
+            ],
     'installable': True,
-    'application': True,
-    'auto_install': False,
 }

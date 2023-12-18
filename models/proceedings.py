@@ -28,5 +28,10 @@ class Proceedings(models.Model):
     documentacion_entregada = fields.Boolean(string='¿Han entregado la documentación antes de tener la cita?', attrs={'invisible': [('type', '!=', 'registro_civil')]} )
     cita_expediente_reservada = fields.Boolean(string='¿Hay cita reservada de expediente?', attrs={'invisible': [('type', '!=', 'registro_civil')]} )
     cita_boda_reservada = fields.Boolean(string='¿Hay cita reservada de boda?', attrs={'invisible': [('type', '!=', 'registro_civil')]} )
+    task = fields.Many2one(comodel_name='project.task',required=True)
     
-    
+    def name_get(self):
+        result = []
+        for record in self:
+            result.append((record.id,record.expediente))
+        return result
