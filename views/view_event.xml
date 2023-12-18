@@ -1,0 +1,49 @@
+<odoo>
+    <record id="view_event_form" model="ir.ui.view">
+        <field name="name">event.event.form</field>
+        <field name="model">event.event</field>
+        <field name="arch" type="xml">
+            <form string="Eventos">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="date_time"/>
+                        <field name="location"/>
+                        <field name="comments"/>
+                        <field name="witness_1"/>
+                        <field name="witness_2"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_event_tree" model="ir.ui.view">
+        <field name="name">event.event.tree</field>
+        <field name="model">event.event</field>
+        <field name="arch" type="xml">
+            <tree string="Eventos">
+                <field name="name"/>
+                <field name="date_time"/>
+                <field name="location"/>
+                <field name="comments"/>
+                <field name="witness_1"/>
+                <field name="witness_2"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_event" model="ir.actions.act_window">
+        <field name="name">Eventos</field>
+        <field name="res_model">event.event</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        name="Eventos"
+        id="event"
+        parent="project.menu_project_config"
+        action="action_event"
+        sequence="20"
+    />
+</odoo>

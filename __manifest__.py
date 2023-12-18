@@ -9,8 +9,11 @@
     'website': 'http://www.jdelosmozos.com',
     'maintainer': 'jdelosmozos@coit.es',
     # Dependencies
-    'depends': ['crm', 'project', 'proceedings','projectProduct'],
+    'depends': ['crm', 'project', 'projectProduct'],
     'data':[
+            'security/ir.model.access.csv',
+            'views/view_event.xml',
+            'views/view_proceedings.xml',
             'views/crm_lead_view.xml',
             'views/project_task_views.xml',
             ],
